@@ -1,0 +1,85 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: #FFFFFF; 
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+
+.title{
+    color: #000000;
+    font-family: 'Krona One', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.09em;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 5em;
+    
+}
+
+.Stitle-1{
+    align-items: center;
+    text-align: center;
+    margin-top: 2em;
+}
+
+.Etitle-1{
+    align-items: center;
+    text-align: center;
+}
+
+.container-flex1{
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: space-between;
+}
+
+.text{
+    font-family: 'Kanit', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.6em;
+    line-height: 1.2em;
+    display: flex;
+    letter-spacing: 0.05em;
+    color: #000000;
+    margin-left: 2.5rem;
+    line-height: 1.5em;
+}
+
+.img1-RSBE{
+    width: 55vw;
+    height: 75vh;
+    margin-right: 2rem;
+}
+
+#line{
+    width: 88%;
+    margin: 5em 4.8em 3em 4.8em;
+    border: #000000 solid 1px;
+}
+
+.squares-flex{
+    display: flex;
+}
+
+#square1 #img-square1{
+    width: 24vw;
+    height: 38vh;
+    border-radius: 50px;
+    margin-left: 2.5rem;
+}
+
+#arrow-square1{
+    width: 15vw;
+    height: 15vh;
+    position: absolute;
+    left: 6em;
+    margin-top: 5em;
+}
