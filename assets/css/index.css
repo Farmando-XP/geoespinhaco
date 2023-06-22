@@ -67,19 +67,90 @@ body{
 
 .squares-flex{
     display: flex;
+    margin-top: 4.5em;
+    justify-content: space-around;
 }
 
 #square1 #img-square1{
     width: 24vw;
     height: 38vh;
     border-radius: 50px;
-    margin-left: 2.5rem;
 }
 
 #arrow-square1{
     width: 15vw;
     height: 15vh;
     position: absolute;
-    left: 6em;
     margin-top: 5em;
+    left: 7.5rem;
+    cursor: pointer;
 }
+
+.text-square1{
+    font-family: 'Kanit', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.4em;
+    line-height: 1.2em;
+    letter-spacing: 0.05em;
+    color: #000000;
+    text-align: center;
+    line-height: 1.5em;
+}
+
+#square2 #img-square2{
+    width: 24vw;
+    height: 38vh;
+    border-radius: 50px;
+}
+
+#arrow-square2{
+    width: 15vw;
+    height: 15vh;
+    position: absolute;
+    margin-top: 5em;
+    left: 36rem;
+    cursor: pointer;
+}
+
+.text-square2{
+    font-family: 'Kanit', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.4em;
+    line-height: 1.2em;
+    letter-spacing: 0.05em;
+    color: #000000;
+    line-height: 1.5em;
+    text-align: center;
+}
+
+#square3 #img-square3{
+    width: 24vw;
+    height: 38vh;
+    border-radius: 50px;
+}
+
+#arrow-square3{
+    width: 15vw;
+    height: 15vh;
+    position: absolute;
+    margin-top: 5em;
+    left: 64.5rem;
+    cursor: pointer;
+}
+
+.text-square3{
+    font-family: 'Kanit', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.4em;
+    line-height: 1.2em;
+    letter-spacing: 0.05em;
+    color: #000000;
+    margin-left: 2.5rem;
+    line-height: 1.5em;
+    text-align: center;
+}
+
+
