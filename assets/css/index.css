@@ -18,18 +18,16 @@ body{
     font-style: normal;
     font-weight: 500;
     font-size: 5em;
-    
+    width: 10em;
+    font-size: 5em;  
+    display: flex;
+    align-items: center;
 }
 
 .Stitle-1{
     align-items: center;
     text-align: center;
     margin-top: 2em;
-}
-
-.Etitle-1{
-    align-items: center;
-    text-align: center;
 }
 
 .container-flex1{
@@ -148,32 +146,35 @@ body{
     text-align: center;
 }
 
-.container-flex2{
+.container-flex2{ 
+    margin-top: 7em;
+    margin-right: 2rem;
+    margin-left: 2.5rem;
     display: flex;
-    margin-top: 8em;
-    flex-direction: row;
-    justify-content: center;
-
+    flex-flow: column nowrap;
+    align-items: center;
 }
 
 #text2{
-    width: 25em;
+    display: flex;
     text-align: justify;
-    align-self: center;
     margin-left: 0;
+    width: 65em;
 }
 
 .Stitle-2{
     width: 10em;
     text-align: center;
     font-size: 5em;  
+    display: flex;
+    align-items: center;
+    margin-bottom: .4em;
 }
 
 .pdf{
     display: flex;
-    justify-content: center;
-    margin-bottom: 2.5em;
-    margin-right: 40em;
+    flex-flow: row wrap;
+    align-items: center;
 }
 
 .titulopdf{
@@ -185,6 +186,8 @@ body{
 
 #img-pdf1{
     padding-right: 6em;
+    display: flex;
+    align-items: center;
 }
 
 #ncl2{
