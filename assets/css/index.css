@@ -17,17 +17,19 @@ body{
     letter-spacing: 0.09em;
     font-style: normal;
     font-weight: 500;
-    font-size: 5em;
-    width: 10em;
-    font-size: 5em;  
-    display: flex;
-    align-items: center;
+    font-size: 5em; 
+    text-align: center;
 }
 
 .Stitle-1{
-    align-items: center;
-    text-align: center;
+    width: 60vw;
     margin-top: 2em;
+}
+
+#title-flex{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
 }
 
 .container-flex1{
@@ -41,7 +43,6 @@ body{
 .text{
     font-family: 'Kanit', sans-serif;
     font-style: normal;
-    font-weight: 600;
     font-size: 1.6em;
     line-height: 1.2em;
     display: flex;
@@ -52,15 +53,23 @@ body{
     text-align: justify;
 }
 
+#text1{
+    display: flex;
+    text-align: justify;
+    width: 50vw;
+}
+
 .img1-RSBE{
-    width: 55vw;
-    height: 75vh;
-    margin-right: 2rem;
+    width: 48vw;
+    height: 70vh;
+    padding-right: 2.5rem;
+    padding-left: 1em;
+    overflow: hidden;
 }
 
 .squares-flex{
     display: flex;
-    margin-top: 4.5em;
+    margin-top: 5em;
     justify-content: space-around;
 }
 
@@ -141,13 +150,12 @@ body{
     line-height: 1.2em;
     letter-spacing: 0.05em;
     color: #000000;
-    margin-left: 2.5rem;
     line-height: 1.5em;
     text-align: center;
 }
 
 .container-flex2{ 
-    margin-top: 7em;
+    margin-top: 5em;
     margin-right: 2rem;
     margin-left: 2.5rem;
     display: flex;
@@ -159,12 +167,11 @@ body{
     display: flex;
     text-align: justify;
     margin-left: 0;
-    width: 65em;
+    width: 90vw;
 }
 
 .Stitle-2{
-    width: 10em;
-    text-align: center;
+    width: 50vw;
     font-size: 5em;  
     display: flex;
     align-items: center;
@@ -172,24 +179,21 @@ body{
 }
 
 .pdf{
+    margin-top: 3em;
     display: flex;
-    flex-flow: row wrap;
-    align-items: center;
+    flex-flow: wrap;
+    justify-content: center;
+    cursor: pointer;
 }
 
 .titulopdf{
     display: flex;
     justify-content: center;
     margin-bottom: 2.5em;
-    margin-right: 44.65em;
+    padding-right: 1.2rem;
+    cursor: pointer;
 }
 
 #img-pdf1{
-    padding-right: 6em;
-    display: flex;
-    align-items: center;
-}
-
-#ncl2{
-    padding-left: 1em;
+    padding-right: 4em;
 }
