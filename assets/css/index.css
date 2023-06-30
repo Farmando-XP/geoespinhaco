@@ -73,13 +73,13 @@ body{
     letter-spacing: 0.09em;
     font-style: normal;
     font-weight: 500;
-    font-size: 5em; 
+    font-size: 4.5em; 
     text-align: center;
 }
 
 .Stitle-1{
     width: 60vw;
-    margin-top: 2em;
+    margin-top: 1em;
 }
 
 #title-flex{
@@ -89,7 +89,7 @@ body{
 }
 
 .container-flex1{
-    margin-top: 3rem;
+    margin-top: 2.5rem;
     display: flex;
     flex-direction: row;
     align-items: stretch;
@@ -99,7 +99,7 @@ body{
 .text{
     font-family: 'Kanit', sans-serif;
     font-style: normal;
-    font-size: 1.6em;
+    font-size: 1.5em;
     line-height: 1.2em;
     display: flex;
     letter-spacing: 0.05em;
@@ -107,6 +107,7 @@ body{
     margin-left: 2.5rem;
     line-height: 1.5em;
     text-align: justify;
+    margin-top: 2.5em;
 }
 
 #text1{
@@ -116,7 +117,7 @@ body{
 }
 
 .img1-RSBE{
-    width: 48vw;
+    width: 45vw;
     height: 70vh;
     padding-right: 2.5rem;
     padding-left: 1em;
@@ -125,13 +126,13 @@ body{
 
 .squares-flex{
     display: flex;
-    margin-top: 5em;
+    margin-top: 9em;
     justify-content: space-around;
 }
 
-#square1 #img-square1{
+#square1 #img-square1 {
     width: 24vw;
-    height: 38vh;
+    height: 35vh;
     border-radius: 50px;
 }
 
@@ -158,7 +159,7 @@ body{
 
 #square2 #img-square2{
     width: 24vw;
-    height: 38vh;
+    height: 35vh;
     border-radius: 50px;
 }
 
@@ -185,7 +186,7 @@ body{
 
 #square3 #img-square3{
     width: 24vw;
-    height: 38vh;
+    height: 35vh;
     border-radius: 50px;
 }
 
