@@ -9,6 +9,62 @@ body{
     overflow-x: hidden;
 }
 
+#container-slider{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 90vh;
+}
+
+#slider{
+    display: flex;
+    overflow: hidden;
+}
+
+.slides{
+    transition: all 1.5s;
+    user-select: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slides h2, .slides h3{
+    position: absolute;
+    color: white;
+}
+
+.slides h2{
+    font-size: 6em;
+}
+
+.slides h3{
+    font-size: 1.2em;
+    margin-top: 22vh;
+}
+
+#slider, .slides img{
+    width: 82vw;
+    height: 88vh;
+    border-radius: 6em;
+}
+
+.slider-container-arrow{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #D6D6D6;
+    border: 0;
+    border-radius: 50%;
+    margin-inline: 1em;
+    width: 6.5vh;
+    height: 6.5vh;
+}
+
+.slider-container-arrow:hover{
+    opacity: 0.6;
+}
 
 .title{
     color: #000000;

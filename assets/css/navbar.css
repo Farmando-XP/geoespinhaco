@@ -1,0 +1,171 @@
+@keyframes fadeIn {
+  0% {
+    opacity: 0%;
+  }
+
+  100% {
+    opacity: 100%;
+  }
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 100%;
+    }
+
+    100% {
+        opacity: 0%;
+    }
+}
+
+/* NAV-MENU */
+
+nav.menu-pc {
+  display: flex;
+
+  justify-content: space-between;
+  align-items: center;
+
+  width: 98vw;
+}
+
+nav.menu-pc ul {
+  display: flex;
+  list-style: none;
+}
+
+nav.menu-pc img {
+  max-width: 100%;
+}
+
+nav.menu-pc li {
+  margin: 3vh;
+  cursor: pointer;
+  transition: 0.2s all;
+}
+
+nav.menu-pc a {
+  font-family: "Kanit", sans-serif;
+  font-weight: 400;
+
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+nav.menu-pc li:hover {
+  transform: scale(1.1);
+}
+
+/* NAV-MOBILE */
+
+div.menu-mobile {
+  justify-content: flex-end;
+  width: 100%;
+
+  display: none;
+}
+
+div.menu-mobile button.hamburguer {
+  background: none;
+  outline: none;
+  margin: 2vh;
+
+  font-size: 6vh;
+  border: none;
+
+  cursor: pointer;
+  position: fixed;
+
+  z-index: 999;
+
+  transition: 0.4s all;
+  display: none;
+}
+
+div.menu-mobile button.hamburguer.active {
+  display: block;
+  animation: fadeIn 0.2s;
+}
+
+div.menu-mobile div.menu-modal {
+    display: flex;
+    position: absolute;
+
+    justify-content: flex-end;
+
+    width: 100vw;
+    height: 100vh;
+    left: 100vw;
+
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+
+    transition: 0.4s all;
+}
+
+div.menu-mobile div.menu-modal.active {
+    left: 0;
+}
+
+div.menu-mobile div.options {
+    display: flex;
+    flex-direction: column;
+
+    background-color: rgba(255, 255, 255, 0.8);
+
+    width: 40vw;
+    min-width: fit-content;
+    height: 100vh;
+
+    padding: 4vh;
+}
+
+div.menu-mobile div.options img {
+    height: 10vh;
+}
+
+div.menu-mobile div.options ul {
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+    list-style: none;
+}
+
+div.menu-mobile div.options ul li {
+    display: flex;
+
+    margin-block: 2vh;
+    text-align: center;
+
+    width: 100%;
+}
+
+div.menu-mobile div.options a {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    width: 100%;
+    padding: 2vh;
+
+    border: 0.3vh solid black;
+    background-color: white;
+    border-radius: 1vh;
+
+    font-family: "Kanit", sans-serif;
+    font-weight: 400;  
+
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  nav.menu-pc {
+    display: none;
+  }
+  div.menu-mobile {
+    display: flex;
+  }
+}
