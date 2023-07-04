@@ -1,31 +1,17 @@
-let arrowLeft = document.getElementById("arrow-left");
-let arrowRight = document.getElementById("arrow-right");
-let img = document.getElementsByClassName("slides");
-let imgActual = 0;
-let isTrasition = false;
+const swiper = new Swiper('.swiper', {
+    // Optional parameters
+    simulateTouch: false,
+    speed: 1000,
+    direction: 'horizontal',
 
-arrowLeft.addEventListener("click", () => {
-    if(imgActual > 0 && isTrasition == false){
-        imgActual--;
-        isTrasition = true;
-        trasition();
-    }
-});
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
 
-arrowRight.addEventListener("click", () => {
-    if(imgActual < img.length - 1 && isTrasition == false){
-        imgActual++;
-        isTrasition = true;
-        trasition();
-    }
-});
-
-function trasition(){
-    let width = img[0].offsetWidth;
-
-    img[0].style.marginLeft = -width*imgActual+'px';
-
-    setTimeout(() => {
-        isTrasition = false;
-    }, 1500);
-}
+    effect: 'fade',
+    fadeEffect: {
+      crossFade: true
+    },
+  });

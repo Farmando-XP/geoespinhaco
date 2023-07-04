@@ -10,38 +10,41 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&family=Krona+One&display=swap" rel="stylesheet">
 
+    <!--Slide(Swiper)-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 
     <link rel="stylesheet" href="assets/css/index.css">
-    
 </head>
 <body>
     <!--Nabvar - Pedro-->
 
     <!--Primeiro Slide - Rafael-->
-    <div id="container-slider">
-        <button class="slider-container-arrow" id="arrow-left">
-            <img src="img/main-index/slider/icon/arrow-right.svg" alt="arrow-left">
-        </button>
-        <div id="slider">
-            <div class="slides">
+    <div class="swiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
                 <img src="img/main-index/slider/img/PEBOT-HOME.JPG" alt="">
-                <h2>pebot</h2>
+                <h2>PEBOT</h2>
                 <h3>Parque Estadual de Botumirim</h3>
             </div>
-            <div class="slides">
+            <div class="swiper-slide">
                 <img src="img/main-index/slider/img/PEGM-HOME.JPG" alt="">
-                <h2>pegm</h2>
-                <h3>Parque Estadual de Botumirim</h3>
+                <h2>PEGM</h2>
+                <h3>Parque Estadual de Grão Mogol</h3>
             </div>
-            <div class="slides">
+            <div class="swiper-slide">
                 <img src="img/main-index/slider/img/PESNT-HOME.JPG" alt="">
-                <h2>pesnt</h2>
-                <h3>Parque Estadual de Botumirim</h3>
+                <h2>PESNT</h2>
+                <h3>Parque Estadual  de Serra Nova e Talhado</h3>
             </div>
         </div>
-        <button class="slider-container-arrow" id="arrow-right">
-            <img src="img/main-index/slider/icon/arrow-left.svg" alt="arrow-right">
-        </button>
+
+        <div class="swiper-button-prev">
+            <img src="img/main-index/slider/icon/arrow-right.svg" alt="">
+        </div>
+        <div class="swiper-button-next">
+            <img src="img/main-index/slider/icon/arrow-left.svg" alt="">
+        </div>
     </div>
 
     <script src="assets/javascipt/slider.js"></script>
