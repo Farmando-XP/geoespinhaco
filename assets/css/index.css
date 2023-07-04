@@ -10,12 +10,13 @@ body{
 }
 
 .swiper{
+    margin-top: 0.5vh;
     user-select: none;
     display: flex;
     align-items: center;
     justify-content: center;
     width: 80vw;
-    height: 86vh;
+    height: 85vh;
     overflow: visible;
 }
 
