@@ -79,23 +79,23 @@ body{
     letter-spacing: 0.09em;
     font-style: normal;
     font-weight: 500;
-    font-size: 5em;
-    
+    font-size: 4.5em; 
+    text-align: center;
 }
 
 .Stitle-1{
-    align-items: center;
-    text-align: center;
-    margin-top: 0.5em;
+    width: 60vw;
+    margin-top: 1em;
 }
 
-.Etitle-1{
+#title-flex{
+    display: flex;
+    flex-flow: column nowrap;
     align-items: center;
-    text-align: center;
 }
 
 .container-flex1{
-    margin-top: 3rem;
+    margin-top: 2.5rem;
     display: flex;
     flex-direction: row;
     align-items: stretch;
@@ -105,37 +105,40 @@ body{
 .text{
     font-family: 'Kanit', sans-serif;
     font-style: normal;
-    font-weight: 600;
-    font-size: 1.6em;
+    font-size: 1.5em;
     line-height: 1.2em;
     display: flex;
     letter-spacing: 0.05em;
     color: #000000;
     margin-left: 2.5rem;
     line-height: 1.5em;
+    text-align: justify;
+    margin-top: 2.5em;
+}
+
+#text1{
+    display: flex;
+    text-align: justify;
+    width: 50vw;
 }
 
 .img1-RSBE{
-    width: 55vw;
-    height: 75vh;
-    margin-right: 2rem;
-}
-
-#line{
-    width: 88%;
-    margin: 5em 4.8em 3em 4.8em;
-    border: #000000 solid 1px;
+    width: 45vw;
+    height: 70vh;
+    padding-right: 2.5rem;
+    padding-left: 1em;
+    overflow: hidden;
 }
 
 .squares-flex{
     display: flex;
-    margin-top: 4.5em;
+    margin-top: 9em;
     justify-content: space-around;
 }
 
-#square1 #img-square1{
+#square1 #img-square1 {
     width: 24vw;
-    height: 38vh;
+    height: 35vh;
     border-radius: 50px;
 }
 
@@ -152,7 +155,7 @@ body{
     font-family: 'Kanit', sans-serif;
     font-style: normal;
     font-weight: 600;
-    font-size: 1.4em;
+    font-size: 2em;
     line-height: 1.2em;
     letter-spacing: 0.05em;
     color: #000000;
@@ -162,7 +165,7 @@ body{
 
 #square2 #img-square2{
     width: 24vw;
-    height: 38vh;
+    height: 35vh;
     border-radius: 50px;
 }
 
@@ -179,7 +182,7 @@ body{
     font-family: 'Kanit', sans-serif;
     font-style: normal;
     font-weight: 600;
-    font-size: 1.4em;
+    font-size: 2em;
     line-height: 1.2em;
     letter-spacing: 0.05em;
     color: #000000;
@@ -189,7 +192,7 @@ body{
 
 #square3 #img-square3{
     width: 24vw;
-    height: 38vh;
+    height: 35vh;
     border-radius: 50px;
 }
 
@@ -206,13 +209,54 @@ body{
     font-family: 'Kanit', sans-serif;
     font-style: normal;
     font-weight: 600;
-    font-size: 1.4em;
+    font-size: 2em;
     line-height: 1.2em;
     letter-spacing: 0.05em;
     color: #000000;
-    margin-left: 2.5rem;
     line-height: 1.5em;
     text-align: center;
 }
 
+.container-flex2{ 
+    margin-top: 5em;
+    margin-right: 2rem;
+    margin-left: 2.5rem;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
 
+#text2{
+    display: flex;
+    text-align: justify;
+    margin-left: 0;
+    width: 90vw;
+}
+
+.Stitle-2{
+    width: 50vw;
+    font-size: 5em;  
+    display: flex;
+    align-items: center;
+    margin-bottom: .4em;
+}
+
+.pdf{
+    margin-top: 3em;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.titulopdf{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2.5em;
+    padding-right: 1.2rem;
+    cursor: pointer;
+}
+
+#img-pdf1{
+    padding-right: 4em;
+}

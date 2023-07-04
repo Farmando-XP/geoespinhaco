@@ -9,5 +9,5 @@
 
 
 
-<img src="https://github.com/Farmando-XP/geoespinhaco/assets/45500064/dcdeaba5-b738-42f4-b48a-f2bd8659dd73.jpeg" height="80">
+<img src="https://github.com/Farmando-XP/geoespinhaco/assets/45500064/ef8e7795-9983-41fe-84e9-f65942aec7e1.jpeg" height="80">
 
