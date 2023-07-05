@@ -54,7 +54,7 @@ header {
   z-index: 10;
 
   background-color: var(--branco);
-  margin-top: -1vh;
+  top: 0;
 }
 
 /* NAV-MENU */
