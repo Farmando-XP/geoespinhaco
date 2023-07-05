@@ -83,7 +83,13 @@ div.menu-mobile {
   display: none;
   width: 100%;
 
+  justify-content: space-between;
+
   background-color: #24340F;
+}
+
+div.menu-mobile img {
+  width: 20vh;
 }
 
 div.menu-mobile div.menu-modal {
