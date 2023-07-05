@@ -119,7 +119,7 @@ body{
 
 .img1-RSBE{
     width: 49vw;
-    height: 90vh;
+    height: 80vh;
     margin-right: 2rem;
     padding-left: 1em;
 }
@@ -147,7 +147,7 @@ body{
 
 #img-square1{
     width: 26vw;
-    height: 42vh;
+    height: 40vh;
     box-shadow: 0 0 8px 1px #d5d2d2a5;
     border-radius: 50px;
 }
@@ -200,7 +200,7 @@ body{
 
 #img-square2{
     width: 26vw;
-    height: 42vh;
+    height: 40vh;
     box-shadow: 0 0 8px 1px #d5d2d2a5;
     border-radius: 50px;
 }
@@ -253,7 +253,7 @@ body{
 
 #img-square3{
     width: 26vw;
-    height: 42vh;
+    height: 40vh;
     box-shadow: 0 0 8px 1px #d5d2d2a5;
     border-radius: 50px;
 }
@@ -311,7 +311,7 @@ body{
     font-family: 'Kanit', sans-serif;
     font-style: normal;
     font-weight: 600;
-    font-size: 1.8em;
+    font-size: 2em;
     letter-spacing: 0.05em;
     color: #000000;
     text-align: center;
@@ -328,7 +328,7 @@ body{
     font-family: 'Kanit', sans-serif;
     font-style: normal;
     font-weight: 600;
-    font-size: 1.8em;
+    font-size: 2em;
     letter-spacing: 0.05em;
     color: #000000;
     text-align: center;
@@ -345,7 +345,7 @@ body{
     font-family: 'Kanit', sans-serif;
     font-style: normal;
     font-weight: 600;
-    font-size: 1.8em;
+    font-size: 2em;
     letter-spacing: 0.05em;
     color: #000000;
     text-align: center;
