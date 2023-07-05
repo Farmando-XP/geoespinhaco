@@ -1,9 +1,3 @@
-:root{
-    --cinza: #1D1D1D;
-    --preto: black;
-    --branco: whitesmoke;
-    --textosFooter:1.2rem;
-  }
   footer {
     background-color: var(--cinza);
     font-weight: 300;
@@ -12,10 +6,6 @@
   }
   .active{
     display: none;
-  }
-  header,main h1{
-      text-align: center;
-      margin-block: 3rem;
   }
   footer a{
       cursor: pointer;
