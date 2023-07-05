@@ -73,7 +73,7 @@ body{
     letter-spacing: 0.09em;
     font-style: normal;
     font-weight: 500;
-    font-size: 4.5em; 
+    font-size: 5em; 
     text-align: center;
 }
 
@@ -100,26 +100,26 @@ body{
 .text{
     font-family: 'Kanit', sans-serif;
     font-style: normal;
-    font-size: 1.5em;
-    line-height: 1.2em;
+    font-size: 1.7em;
+    line-height: 1.5em;
     display: flex;
-    letter-spacing: 0.05em;
+    letter-spacing: 0.01em;
     color: #000000;
     margin-left: 2rem;
-    line-height: 1.5em;
     text-align: justify;
+    align-items: center;
 }
 
 #text1{
     display: flex;
     text-align: justify;
     width: 50vw;
-    margin-top: 1em;
+    margin-top: .5em;
 }
 
 .img1-RSBE{
-    width: 45vw;
-    height: 70vh;
+    width: 49vw;
+    height: 90vh;
     margin-right: 2rem;
     padding-left: 1em;
 }
@@ -132,95 +132,168 @@ body{
 
 .squares-flex{
     display: flex;
-    margin-top: 5em;
+    margin-top: 6em;
     justify-content: space-around;
     flex-wrap: wrap;
 }
 
+/*square 1*/
+
 #square1{
     display: flex;
-    flex-direction: column
+    flex-direction: column;
+    text-align: center;
 }
 
 #img-square1{
     width: 26vw;
-    height: 45vh;
-    border-radius: 50px;
+    height: 42vh;
     box-shadow: 0 0 8px 1px #d5d2d2a5;
+    border-radius: 50px;
+}
+
+#square1 {
+    position: relative;
+    float:left;
+}
+
+#img-square1 {
+  opacity: 1;
+  display: block;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+#arrow-square1 {
+    height: 12vh;
+    width: 12vw;  
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute; 
+    top: 50%;
+    left: 60%;  
+    transform: translate(-50%, -50%);  
+    background-image: url('./../../img/main-index/icon-arrow.svg');
+    background-repeat: no-repeat;
+}
+
+#square1:hover #img-square1 {
+  opacity: .8;
+}
+
+#square1:hover #arrow-square1 {
+  opacity: 1;
+}
+
+#arrow-square1{
+    height: 14vh;
+    cursor: pointer;
+}
+
+/*square 2*/
+
+#square2{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
 }
 
 #img-square2{
     width: 26vw;
-    height: 45vh;
-    border-radius: 50px;
+    height: 42vh;
     box-shadow: 0 0 8px 1px #d5d2d2a5;
+    border-radius: 50px;
 }
 
-#square2{
+#square2 {
+    position: relative;
+    float:left;
+}
+
+#img-square2 {
+  opacity: 1;
+  display: block;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+#arrow-square2 {
+    height: 12vh;
+    width: 12vw;  
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute; 
+    top: 50%;
+    left: 60%;  
+    transform: translate(-50%, -50%);  
+    background-image: url('./../../img/main-index/icon-arrow.svg');
+    background-repeat: no-repeat;
+}
+
+#square2:hover #img-square2 {
+  opacity: .8;
+}
+
+#square2:hover #arrow-square2 {
+  opacity: 1;
+}
+
+#arrow-square2{
+    height: 14vh;
+    cursor: pointer;
+}
+
+/*square 3*/
+
+#square3{
     display: flex;
-    flex-direction: column
+    flex-direction: column;
+    text-align: center;
 }
 
 #img-square3{
     width: 26vw;
-    height: 45vh;
-    border-radius: 50px;
+    height: 42vh;
     box-shadow: 0 0 8px 1px #d5d2d2a5;
+    border-radius: 50px;
 }
 
-#square3{
-    display: flex;
-    flex-direction: column
+#square3 {
+    position: relative;
+    float:left;
 }
 
-/*square arrow*/
-
-.square-arrow{
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+#img-square3 {
+  opacity: 1;
+  display: block;
+  transition: .5s ease;
+  backface-visibility: hidden;
 }
 
-#arrow-square1{
+#arrow-square3 {
     height: 12vh;
-    cursor: pointer;
-    border-radius: 50px;
-    transition: all 1s ease-in-out;
+    width: 12vw;  
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute; 
+    top: 50%;
+    left: 60%;  
+    transform: translate(-50%, -50%);  
+    background-image: url('./../../img/main-index/icon-arrow.svg');
+    background-repeat: no-repeat;
 }
 
-#arrow-square1:hover{
-    background-color:rgba(154, 154, 154, 0.5);
-    border: 0;
-    border-radius: 50px;
-    transition: all .8s ease-in-out;
+#square3:hover #img-square3 {
+  opacity: .8;
 }
 
-#arrow-square2{
-    height: 12vh;
-    cursor: pointer;
-    border-radius: 50px;
-    transition: all 1s ease-in-out;
-}
-
-#arrow-square2:hover{
-    background-color:rgba(154, 154, 154, 0.5);
-    border: 0;
-    border-radius: 50px;
-    transition: all .8s ease-in-out;
+#square3:hover #arrow-square3 {
+  opacity: 1;
 }
 
 #arrow-square3{
-    height: 12vh;
+    height: 14vh;
     cursor: pointer;
-    border-radius: 50px;
-    transition: all 1s ease-in-out;
-}
-
-#arrow-square3:hover{
-    background-color:rgba(154, 154, 154, 0.5);
-    border: 0;
-    border-radius: 50px;
-    transition: all .8s ease-in-out;
 }
 
 
@@ -230,6 +303,8 @@ body{
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    margin-bottom: 6em;
+    margin-top: 1em;
 }
 
 .text-square1{
@@ -275,7 +350,7 @@ body{
     color: #000000;
     text-align: center;
     line-height: 1.5em;
-    width: 20vw;
+    width: 23vw;
     transition: all .3s;
 }
 
@@ -286,9 +361,8 @@ body{
 /*square and*/
 
 .container-flex2{ 
-    margin-top: 3em;
-    margin-right: 2.5rem;
-    margin-left: 2.5rem;
+    margin-right: 2rem;
+    margin-left: 2rem;
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
@@ -297,8 +371,8 @@ body{
 #text2{
     display: flex;
     text-align: justify;
-    margin-left: 0;
-    margin-right: .5rem;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
 }
 
 .Stitle-2{
@@ -315,6 +389,7 @@ body{
     display: flex;
     justify-content: center;
     cursor: pointer;
+    margin-bottom: 2.5em;
 }
 
 #img-pdf1{
@@ -335,20 +410,23 @@ body{
     transform: scale(1.1);
 }
 
-.titulopdf{
+#pdf1{
     display: flex;
-    justify-content: center;
-    margin-bottom: 2.5em;
-    cursor: pointer;
-    font-weight: 600;
+    flex-direction: column;
+    text-align: center;
+}
+
+#pdf2{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
 }
 
 .textpdf{
     font-family: 'Kanit', sans-serif;
     font-style: normal;
-    font-size: 1.5em;
+    font-size: 1.7em;
     line-height: 1.2em;
-    display: flex;
     margin-right: 1em;
     margin-left: 1em;
     letter-spacing: 0.05em;
@@ -356,6 +434,8 @@ body{
     line-height: 1.5em;
     text-align: justify;
     transition: all .3s;
+    cursor: pointer;
+    font-weight: 600;
 }
 
 .textpdf:hover{
@@ -387,7 +467,7 @@ body{
         margin-top: 0;
         margin-left: 1rem;
         margin-right: 1rem;
-        font-size: 1.2em;
+        font-size: 1.3em;
     }
 
     #text1{
@@ -464,8 +544,8 @@ body{
 
     .text{
         margin-top: 0;
-        margin-left: 2.5rem;
-        margin-right: 1rem;
+        margin-left: 2rem;
+        margin-right: 2rem;
     }
 
     #text1{
@@ -477,12 +557,8 @@ body{
     }
 
     .img1-RSBE{
-        display: flex;
-        justify-content: flex-end;
-        width: 50vw;
-        height: 65vh;
-        margin-right: 1rem;
-        padding-left: 1em;
+        width: 60vw;
+        height: 80vh;
         margin-top: 1.5em; 
     }
 
