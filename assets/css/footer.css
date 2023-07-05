@@ -7,10 +7,6 @@ footer {
   .active{
     display: none;
   }
-  header,main h1{
-      text-align: center;
-      margin-block: 3rem;
-  }
   footer a{
       cursor: pointer;
       color: var(--branco);
