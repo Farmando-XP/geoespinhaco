@@ -1,15 +1,8 @@
-const hamburguerOpenBtn = document.querySelector("#hamburguer-open");
-const hamburguerCloseBtn = document.querySelector("#hamburguer-close");
 const menuModal = document.querySelector(".menu-modal");
+const hamburguer = document.querySelector("#menu-bar");
 
-hamburguerOpenBtn.addEventListener("click", () => {
-    hamburguerOpenBtn.classList.remove("active");
-    hamburguerCloseBtn.classList.add("active");
-    menuModal.classList.add("active");
+hamburguer.addEventListener("click", () => {
+    document.getElementById("menu-bar").classList.toggle("change");
+    document.getElementById("menu-bg").classList.toggle("change-bg");
+    menuModal.classList.toggle("active");
 });
-
-hamburguerCloseBtn.addEventListener("click", () => {
-    hamburguerCloseBtn.classList.remove("active");
-    hamburguerOpenBtn.classList.add("active");
-    menuModal.classList.remove("active");
-})
