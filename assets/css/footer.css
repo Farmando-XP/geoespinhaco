@@ -1,5 +1,5 @@
-  footer {
-    background-color: var(--cinza);
+footer {
+    background-color: var(--verde);
     font-weight: 300;
     padding: 1.5rem 1.5rem 1.5rem 0;
     font-family: "Kanit", sans-serif;
@@ -21,7 +21,7 @@
     justify-content: space-evenly;
     gap: .5rem 1rem;
   }
-  .containerSocialMedia img {
+  .containerSocialMedia a img {
     border-radius: 50%;
     width: 3.5rem;
     height: 3.5rem;
@@ -50,7 +50,7 @@
   .containerLinksUteis .boxParkContent a > img {
     width: 2.8rem;
   }
-  
+
   .divisorHorizontal {
     border-bottom: 1px var(--branco) solid;
     width: 95%;
@@ -73,6 +73,9 @@
     .containerSocialMedia {
     width: 13rem;
     }
+    .containerLinksUteis .boxParkContent a > img {
+      width: 2rem;
+    }
     .containerHover {
     display: none;
       }
@@ -86,7 +89,7 @@
   .containerSocialMedia {
     width: 17rem;
     }
-  .containerSocialMedia img {
+  .containerSocialMedia a img {
     width: 4.3rem;
     height: 4.3rem;
     }

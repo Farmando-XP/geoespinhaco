@@ -2,7 +2,13 @@
     padding: 0;
     margin: 0;
 }
-
+:root{
+    --cinza: #1D1D1D;
+    --preto: black;
+    --branco: white;
+    --verde: #24340F;
+    --textosFooter:1.2rem;
+  }
 body{
     background-color: #FFFFFF; 
     max-width: 100%;
