@@ -59,39 +59,17 @@ nav.menu-pc li:hover {
 /* NAV-MOBILE */
 
 div.menu-mobile {
-  justify-content: flex-end;
+  display: none;
   width: 100%;
 
-  display: none;
-}
+  align-items: center;
 
-div.menu-mobile button.hamburguer {
-  background: none;
-  outline: none;
-  margin: 2vh;
-
-  font-size: 6vh;
-  border: none;
-
-  cursor: pointer;
-  position: fixed;
-
-  z-index: 999;
-
-  transition: 0.4s all;
-  display: none;
-}
-
-div.menu-mobile button.hamburguer.active {
-  display: block;
-  animation: fadeIn 0.2s;
+  background-color: #24340F;
 }
 
 div.menu-mobile div.menu-modal {
     display: flex;
     position: absolute;
-
-    justify-content: flex-end;
 
     width: 100vw;
     height: 100vh;
