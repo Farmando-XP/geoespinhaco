@@ -312,6 +312,7 @@ body{
     flex-wrap: wrap;
     margin-bottom: 6em;
     margin-top: 1em;
+
 }
 
 .text-square1{
@@ -357,8 +358,9 @@ body{
     color: #000000;
     text-align: center;
     line-height: 1.5em;
-    width: 23vw;
+    width: 20vw;
     transition: all .3s;
+   
 }
 
 .text-square3:hover{
