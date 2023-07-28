@@ -167,21 +167,22 @@ div.square-box {
     display: flex;
     flex-direction: column;
 
-    width: 50vh;
-    height: 50vh;
+    width: 55vh;
 
     overflow: hidden;
 
     row-gap: 2vh;
 
     align-items: center;
+    margin-top: 2em;
 }
 
 div.square-box img {
     width: 100%;
-    border-radius: 3vh;
+    border-radius: 5vh;
 
     transition: 0.3s all;
+    backface-visibility: hidden;
 }
 
 div.square-box p {
@@ -199,7 +200,7 @@ div.square-box:hover img {
     opacity: 80%;
 }
 
-/*square and*/
+/*square end*/
 
 .container-flex2{ 
     margin-right: 2rem;
@@ -284,8 +285,6 @@ div.square-box:hover img {
 }
 
 
-/*Responsivo: dois titulos, texto 1 e imagem 1 e quadrinhos  min 760max936*/
-
 @media screen and (min-width:400px) and (max-width:767px) { 
     .title{
         font-size: 2.7em;
@@ -347,6 +346,7 @@ div.square-box:hover img {
         margin-top: 5em;
         flex-direction: column;
         align-items: center;
+        
     }
 
     #img-square1, #img-square2, #img-square3{
@@ -381,12 +381,13 @@ div.square-box:hover img {
         display: flex;
         flex-direction: column;
         justify-content: center;
+        align-items: center;
     }
 
     .text{
         margin-top: 0;
-        margin-left: 2rem;
-        margin-right: 2rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
     }
 
     #text1{
@@ -399,7 +400,7 @@ div.square-box:hover img {
 
     .img1-RSBE{
         width: 60vw;
-        height: 80vh;
+        height: 70vh;
         margin-top: 1.5em; 
     }
 
@@ -416,6 +417,11 @@ div.square-box:hover img {
         padding-right: .5rem;
         display: flex;
         align-items: center;
+    }
+
+    #text2{
+        margin-left: .5rem;
+        margin-right: .5rem;
     }
   }
 

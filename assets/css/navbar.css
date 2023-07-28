@@ -44,6 +44,7 @@
   --preto: black;
   --branco: whitesmoke;
   --textosFooter: 1.2rem;
+  --verde: rgba(36, 52, 15, 1);
 }
 
 /* HEADER */
@@ -51,10 +52,12 @@
 header {
   position: fixed;
   width: 100vw;
+
   z-index: 10;
 
-  background-color: var(--branco);
   top: 0;
+  background-color: var(--verde);
+  padding: 5px;
 }
 
 /* NAV-MENU */
@@ -66,15 +69,18 @@ nav.menu-pc {
   align-items: center;
 
   width: 98vw;
+  height: 51px;
 }
 
 nav.menu-pc ul {
   display: flex;
   list-style: none;
+  overflow: hidden;
 }
 
 nav.menu-pc img {
-  max-width: 100%;
+  width: 400px;
+  height: 132px;
 }
 
 nav.menu-pc li {
@@ -89,6 +95,8 @@ nav.menu-pc a {
 
   text-decoration: none;
   text-transform: capitalize;
+
+  color: white;
 }
 
 nav.menu-pc li:hover {
@@ -103,11 +111,15 @@ div.menu-mobile {
 
   justify-content: space-between;
 
-  background-color: #24340f;
+  background-color: --verde;
 }
 
 div.menu-mobile img {
-  width: 20vh;
+  width: 200px;
+  height: 92px;
+
+  margin-bottom: -20px;
+  margin-top: -10px;
 }
 
 div.menu-mobile div.menu-modal {
