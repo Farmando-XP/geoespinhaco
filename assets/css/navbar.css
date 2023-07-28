@@ -111,11 +111,15 @@ div.menu-mobile {
 
   justify-content: space-between;
 
-  background-color: #24340f;
+  background-color: --verde;
 }
 
 div.menu-mobile img {
-  width: 20vh;
+  width: 200px;
+  height: 92px;
+
+  margin-bottom: -20px;
+  margin-top: -10px;
 }
 
 div.menu-mobile div.menu-modal {
