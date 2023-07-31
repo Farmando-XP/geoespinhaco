@@ -2,68 +2,83 @@
     padding: 0;
     margin: 0;
 }
-
+:root{
+    --cinza: #1D1D1D;
+    --preto: black;
+    --branco: white;
+    --verde: #24340F;
+    --textosFooter:1.2rem;
+  }
 body{
     background-color: #FFFFFF; 
     max-width: 100%;
     overflow-x: hidden;
 }
 
-#container-slider{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100vw;
-    height: 90vh;
+main {
+    margin-block: 15vh;
 }
 
-#slider{
-    display: flex;
-    overflow: hidden;
-}
-
-.slides{
-    transition: all 1.5s;
+.swiper{
     user-select: none;
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 80vw;
+    overflow: visible;
 }
 
-.slides h2, .slides h3{
+.swiper-button-next{
+    right: var(--swiper-navigation-sides-offset, -6vw);
+    left: auto;
+}
+
+.swiper-button-prev{
+    left: var(--swiper-navigation-sides-offset, -6vw);
+    right: auto;
+}
+
+.swiper-button-next::after , .swiper-button-prev::after{
+    display: none;
+}
+
+.swiper-button-next, .swiper-button-prev{
+    background-color: #D6D6D6;
+    width: 7vh;
+    height: 7vh;
+    border-radius: 50%;
+}
+
+.swiper-button-next img, .swiper-button-prev img{
+    width: 4.5vh;
+    height: 4.5vh;
+}
+
+.swiper-slide{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.swiper-slide h2, .swiper-slide h3{
+    font-family: "kanit";
     position: absolute;
     color: white;
 }
 
-.slides h2{
+.swiper-slide h2{
     font-size: 6em;
 }
 
-.slides h3{
+.swiper-slide h3{
     font-size: 1.2em;
     margin-top: 22vh;
 }
 
-#slider, .slides img{
-    width: 82vw;
-    height: 88vh;
+.swiper-slide img{
+    width: 100%;
+    height: 100%;
     border-radius: 6em;
-}
-
-.slider-container-arrow{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #D6D6D6;
-    border: 0;
-    border-radius: 50%;
-    margin-inline: 1em;
-    width: 6.5vh;
-    height: 6.5vh;
-}
-
-.slider-container-arrow:hover{
-    opacity: 0.6;
 }
 
 .title{
@@ -73,7 +88,7 @@ body{
     letter-spacing: 0.09em;
     font-style: normal;
     font-weight: 500;
-    font-size: 4.5em; 
+    font-size: 5em; 
     text-align: center;
 }
 
@@ -94,127 +109,102 @@ body{
     flex-direction: row;
     align-items: stretch;
     justify-content: space-between;
+    overflow: hidden;
 }
 
 .text{
     font-family: 'Kanit', sans-serif;
     font-style: normal;
-    font-size: 1.5em;
-    line-height: 1.2em;
-    display: flex;
-    letter-spacing: 0.05em;
-    color: #000000;
-    margin-left: 2.5rem;
+    font-size: 1.7em;
     line-height: 1.5em;
+    display: flex;
+    letter-spacing: 0.01em;
+    color: #000000;
+    margin-left: 2rem;
     text-align: justify;
-    margin-top: 2.5em;
+    align-items: center;
 }
 
 #text1{
     display: flex;
     text-align: justify;
     width: 50vw;
+    margin-top: .5em;
 }
 
 .img1-RSBE{
-    width: 45vw;
-    height: 70vh;
-    padding-right: 2.5rem;
+    width: 49vw;
+    height: 80vh;
+    margin-right: 2rem;
     padding-left: 1em;
-    overflow: hidden;
 }
 
-.squares-flex{
+.img1-RSBE img{
+    margin-top: 2em;
+}
+
+/* SQUARES */
+
+/* SQUARE-WRAPPER */
+
+div.squares-wrapper {
     display: flex;
-    margin-top: 9em;
+    flex-wrap: wrap;
+
     justify-content: space-around;
+    align-items: center;
+
+    gap: 2vh;
+
+    margin-block: 5vh;
+
+    width: 100vw;
 }
 
-#square1 #img-square1 {
-    width: 24vw;
-    height: 35vh;
-    border-radius: 50px;
+/* SQUARE-BOX */
+
+div.square-box {
+    display: flex;
+    flex-direction: column;
+
+    width: 55vh;
+
+    overflow: hidden;
+
+    row-gap: 2vh;
+
+    align-items: center;
+    margin-top: 2em;
 }
 
-#arrow-square1{
-    width: 15vw;
-    height: 15vh;
-    position: absolute;
-    margin-top: 5em;
-    left: 7.5rem;
-    cursor: pointer;
+div.square-box img {
+    width: 100%;
+    border-radius: 5vh;
+
+    transition: 0.3s all;
+    backface-visibility: hidden;
 }
 
-.text-square1{
+div.square-box p {
     font-family: 'Kanit', sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 2em;
-    line-height: 1.2em;
     letter-spacing: 0.05em;
     color: #000000;
     text-align: center;
     line-height: 1.5em;
 }
 
-#square2 #img-square2{
-    width: 24vw;
-    height: 35vh;
-    border-radius: 50px;
+div.square-box:hover img {
+    opacity: 80%;
 }
 
-#arrow-square2{
-    width: 15vw;
-    height: 15vh;
-    position: absolute;
-    margin-top: 5em;
-    left: 36rem;
-    cursor: pointer;
-}
-
-.text-square2{
-    font-family: 'Kanit', sans-serif;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 2em;
-    line-height: 1.2em;
-    letter-spacing: 0.05em;
-    color: #000000;
-    line-height: 1.5em;
-    text-align: center;
-}
-
-#square3 #img-square3{
-    width: 24vw;
-    height: 35vh;
-    border-radius: 50px;
-}
-
-#arrow-square3{
-    width: 15vw;
-    height: 15vh;
-    position: absolute;
-    margin-top: 5em;
-    left: 64.5rem;
-    cursor: pointer;
-}
-
-.text-square3{
-    font-family: 'Kanit', sans-serif;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 2em;
-    line-height: 1.2em;
-    letter-spacing: 0.05em;
-    color: #000000;
-    line-height: 1.5em;
-    text-align: center;
-}
+/*square end*/
 
 .container-flex2{ 
-    margin-top: 5em;
     margin-right: 2rem;
-    margin-left: 2.5rem;
+    margin-left: 2rem;
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
@@ -223,34 +213,215 @@ body{
 #text2{
     display: flex;
     text-align: justify;
-    margin-left: 0;
-    width: 90vw;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
 }
 
 .Stitle-2{
     width: 50vw;
-    font-size: 5em;  
+    font-size: 4.5em;  
     display: flex;
     align-items: center;
-    margin-bottom: .4em;
+    margin-bottom: .5em;
+    justify-content: center;
 }
 
 .pdf{
-    margin-top: 3em;
+    margin-top: 1.5em;
     display: flex;
-    flex-flow: wrap;
     justify-content: center;
     cursor: pointer;
-}
-
-.titulopdf{
-    display: flex;
-    justify-content: center;
     margin-bottom: 2.5em;
-    padding-right: 1.2rem;
-    cursor: pointer;
 }
 
 #img-pdf1{
-    padding-right: 4em;
+    height: 22vh;
+    transition: all .5s ease;
 }
+
+#img-pdf1:hover{
+    transform: scale(1.1);
+}
+
+#img-pdf2{
+    height: 22vh;
+    transition: all .5s ease;
+}
+
+#img-pdf2:hover{
+    transform: scale(1.1);
+}
+
+#pdf1{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#pdf2{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.textpdf{
+    font-family: 'Kanit', sans-serif;
+    font-style: normal;
+    font-size: 1.7em;
+    line-height: 1.2em;
+    margin-right: 1em;
+    margin-left: 1em;
+    letter-spacing: 0.05em;
+    color: #000000;
+    line-height: 1.5em;
+    text-align: justify;
+    transition: all .3s;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.textpdf:hover{
+   opacity: 0.6;
+}
+
+
+@media screen and (min-width:400px) and (max-width:767px) { 
+    .title{
+        font-size: 2.7em;
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+    
+    #title-flex, .Stitle-1{
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+    }
+
+    .container-flex1{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .text{
+        margin-top: 0;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        font-size: 1.3em;
+    }
+
+    #text1{
+        display: flex;
+        flex-flow: wrap;
+        justify-content: center;
+        width: 90vw;
+        margin-top: 0;
+    }
+
+    .img1-RSBE{
+        width: 90vw;
+        height: 70vh;
+        margin-right: 2.5rem;
+        padding-left: 1em;
+        margin-top: 1.5em;
+    }
+
+    .container-flex2{
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    .Stitle-2{
+        margin-bottom: .8em;
+        width: 80vw;
+        font-size: 3.3em;
+        padding-left: .5rem;
+        padding-right: .5rem;
+        display: flex;
+        align-items: center;
+    }
+
+    .squares-flex{
+        display: flex;
+        margin-top: 5em;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+
+    #img-square1, #img-square2, #img-square3{
+        margin-top: 3em;
+    }
+
+  }
+
+  @media screen and (min-width:760px) and (max-width:936px){
+    .squares-flex #square1, #square2, #square3{
+        display: flex;
+        margin-top: 5em;
+        flex-direction: row;
+        align-items: center;
+        margin-top: 0;
+    }
+
+  }
+  
+  @media screen and (min-width:768px) and (max-width:1015px){
+    .title{
+        font-size: 4.4em;
+    }
+    
+    #title-flex, .Stitle-1{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    }
+
+    .container-flex1{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .text{
+        margin-top: 0;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    #text1{
+        display: flex;
+        flex-flow: wrap;
+        justify-content: center;
+        width: 90vw;
+        margin-top: 0;
+    }
+
+    .img1-RSBE{
+        width: 60vw;
+        height: 70vh;
+        margin-top: 1.5em; 
+    }
+
+    .container-flex2{
+        margin-left: 2.5rem;
+        margin-right: 1rem;
+    }
+
+    .Stitle-2{
+        margin-bottom: .8em;
+        width: 40vw;
+        font-size: 3.3em;
+        padding-left: .5rem;
+        padding-right: .5rem;
+        display: flex;
+        align-items: center;
+    }
+
+    #text2{
+        margin-left: .5rem;
+        margin-right: .5rem;
+    }
+  }
+
