@@ -18,6 +18,7 @@ body{
     font-weight: 500;
     font-size: 3em; 
     text-align: center;
+    line-height: 7vh;
 }
 .Stitle-2{
     width: 50vw;
@@ -55,5 +56,11 @@ body{
 #text{
     display: flex;
     text-align: justify;
-    width: 50vw;
+    width: 41vw;
+}
+
+.img1-PEBOT{
+    padding-right: 2.5rem;
+    max-width: 55vh;
+    width: 100%;
 }
