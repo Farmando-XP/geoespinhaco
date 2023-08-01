@@ -11,11 +11,15 @@ body{
 
 .container-flex1{
     margin-top: 2.5rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    overflow: hidden;
     margin-left: 3em;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content:space-evenly;
+}
+
+.div-flex1{
+    display: flex;
+    flex-flow: column wrap;
 }
 
 .Stitle-1{
@@ -31,7 +35,7 @@ body{
     margin-top: 1em;
     text-align: center;
     text-transform: uppercase;
-    width: 35vw;
+    width: 40vw;
 }
 
 .text{
@@ -39,33 +43,49 @@ body{
     font-style: normal;
     font-size: 1.7em;
     line-height: 1.5em;
-    display: flex;
     letter-spacing: 0.01em;
     color: #000000;
     text-align: justify;
     width: 41vw;
-    margin-top: 2.5em;
+    margin-top: 3em;
 }
 
 .img1-PEBOT{
     width: 100%;
-    max-width: 53vh;
+    max-width: 60vh;
+    margin-right: 3em;
+}
+
+.pdf-inf{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 2.2em;
+}
+
+#img-pdf{
+    width: 100%;
+    max-width: 6vh;
+    max-height: 6vw;
+    text-align: center;
+    transition: all .5s ease;
+    cursor: pointer;
 }
 
 .textpdf{
     font-family: 'Kanit', sans-serif;
     font-style: normal;
-    font-size: 1.7em;
-    line-height: 1.2em;
+    font-size: 1.6em;
     margin-right: 1em;
     margin-left: 1em;
     letter-spacing: 0.05em;
     color: #000000;
     line-height: 1.5em;
-    text-align: justify;
+    text-align: center;
     transition: all .3s;
     cursor: pointer;
     font-weight: 600;
+    width: 5vh;
 }
 
 .textpdf:hover{
