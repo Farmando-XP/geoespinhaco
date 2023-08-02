@@ -9,12 +9,39 @@ body{
     overflow-x: hidden;
 }
 
+        
+#container-imagem {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background: url('./../img/img-pebot/PEBOT-PAG.JPG');
+    background-size: cover;
+}
+
+#imagem-title{
+    position: absolute;
+
+    font-family: 'Krona One', sans-serif;
+    font-size: 9vh;
+    font-style: normal;
+    font-weight: 500;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFF;
+
+    letter-spacing: 0.07em;
+    bottom: 38%;
+    left: 40%;
+    transform: translate(-34%, 0);
+}
+
 .container-flex1{
     margin-top: 2.5rem;
     margin-left: 3em;
     display: flex;
     flex-flow: row wrap;
-    justify-content:space-evenly;
+    justify-content:space-around;
+    gap: 20vh;
 }
 
 .div-flex1{
@@ -51,8 +78,7 @@ body{
 }
 
 .img1-PEBOT{
-    width: 100%;
-    max-width: 60vh;
+    width: 90%;
     margin-right: 3em;
 }
 
@@ -65,8 +91,10 @@ body{
 
 #img-pdf{
     width: 100%;
-    max-width: 6vh;
-    max-height: 6vw;
+    max-width: 7vh;
+    max-height: 7vw;
+    min-width: 6vh;
+    min-height: 6vw;
     text-align: center;
     transition: all .5s ease;
     cursor: pointer;
@@ -90,4 +118,37 @@ body{
 
 .textpdf:hover{
    opacity: 0.6;
+}
+
+.container-flex2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title-flex2{
+    color: #000000;
+    font-family: 'Krona One', sans-serif;
+    letter-spacing: 0.07em;
+    font-style: normal;
+    font-weight: 500;
+    text-align: center;
+}
+
+#title-h1{
+    margin-top: 0.8em;
+    text-transform: uppercase;
+    font-size: 4.5em;
+}
+
+#title-h2{
+    font-size: 2.7em;
+    margin-top: 0.5em;
+    width: 55vw;
+}
+
+.img2-PEBOT{
+    width: 35%;
+    margin-top: 2.5em;
+    margin-bottom: 4em;
 }
