@@ -45,6 +45,8 @@
   --branco: whitesmoke;
   --textosFooter: 1.2rem;
   --verde: rgba(36, 52, 15, 1);
+  --marrom: #441E0D;
+  --ciano: #235755;
 }
 
 /* HEADER */
@@ -56,8 +58,23 @@ header {
   z-index: 10;
 
   top: 0;
-  background-color: var(--verde);
   padding: 5px;
+}
+
+header.bottom {
+  position: sticky;
+}
+
+header.verde {
+  background-color: var(--verde);
+}
+
+header.marrom {
+  background-color: var(--marrom);
+}
+
+header.ciano {
+  background-color: var(--ciano);
 }
 
 /* NAV-MENU */
