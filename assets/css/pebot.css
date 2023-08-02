@@ -16,11 +16,11 @@ body{
     width: 100vw;
     background: url('./../img/img-pebot/PEBOT-PAG.JPG');
     background-size: cover;
+    overflow: hidden;
 }
 
 #imagem-title{
     position: absolute;
-
     font-family: 'Krona One', sans-serif;
     font-size: 9vh;
     font-style: normal;
@@ -28,7 +28,6 @@ body{
     text-align: center;
     text-transform: uppercase;
     color: #FFF;
-
     letter-spacing: 0.07em;
     bottom: 38%;
     left: 40%;
@@ -39,7 +38,7 @@ body{
     margin-top: 2.5rem;
     margin-left: 3em;
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: row ;
     justify-content:space-around;
     gap: 20vh;
 }
@@ -58,7 +57,7 @@ body{
     font-weight: 500;
     justify-content: flex-start;
     letter-spacing: 0.05em;
-    line-height: 7vh;
+    line-height: 9vh;
     margin-top: 1em;
     text-align: center;
     text-transform: uppercase;
@@ -74,7 +73,7 @@ body{
     color: #000000;
     text-align: justify;
     width: 41vw;
-    margin-top: 3em;
+    margin-top: 2em;
 }
 
 .img1-PEBOT{
@@ -142,7 +141,7 @@ body{
 }
 
 #title-h2{
-    font-size: 2.7em;
+    font-size: 2.5em;
     margin-top: 0.5em;
     width: 55vw;
 }
@@ -151,4 +150,40 @@ body{
     width: 35%;
     margin-top: 2.5em;
     margin-bottom: 4em;
+}
+
+@media screen and (min-width:400px) and (max-width:767px){
+
+}
+
+@media screen and (min-width:768px) and (max-width:1015px){
+    .Stitle-1{
+        font-size: 2.3em;
+    }
+
+    .text{
+        font-size: 1.5em;
+    }
+
+    .img1-PEBOT{
+        margin-top: 2em;
+        height: 95%;
+    }
+
+    .textpdf{
+        font-size: 1.3em;
+    }
+
+    #title-h1{
+        font-size: 3.8em;
+    }
+
+    #title-h2{
+        font-size: 2em;
+        width: 65vw;
+    }
+
+    .container-flex1{
+        gap: 5vh;
+    }
 }
