@@ -1,0 +1,96 @@
+.swiper.bottom{
+    margin-block: 3vh;
+}
+
+.swiper.bottom .swiper-slide img{
+    width: 90%;
+    height: 75%;
+    border-radius: 2.2vw;
+}
+
+.swiper.bottom .swiper-slide{
+    flex-direction: column;
+}
+
+.swiper.bottom .swiper-slide h2, 
+.swiper.bottom .swiper-slide h3{
+   position: static;
+   color: black;
+   margin: 0;
+}
+
+.swiper.bottom .swiper-slide h2{
+    font-size: 2.5em;
+}
+
+.swiper.bottom .swiper-slide h3{
+    margin-bottom: 1.5vh;
+    line-height: 3.8vh;
+    text-align: justify;
+}
+
+.swiper{
+    user-select: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80vw;
+    height: 88vh;
+    overflow: visible;
+}
+
+.swiper-button-next{
+    right: var(--swiper-navigation-sides-offset, -6vw);
+    left: auto;
+}
+
+.swiper-button-prev{
+    left: var(--swiper-navigation-sides-offset, -6vw);
+    right: auto;
+}
+
+.swiper-button-next::after , .swiper-button-prev::after{
+    display: none;
+}
+
+.swiper-button-next, .swiper-button-prev{
+    width: 3.8vw;
+    height: 3.8vw;
+    border-radius: 50%;
+
+    background-color: #D6D6D6;
+}
+
+.swiper-button-next img, .swiper-button-prev img{
+    width: 2.3vw;
+    height: 2.3vw;
+}
+
+.swiper-slide{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.swiper-slide h2, .swiper-slide h3{
+    font-family: "kanit";
+    position: absolute;
+    color: white;
+}
+
+.swiper-slide h2{
+    font-size: 6em;
+}
+
+.swiper-slide h3{
+    font-size: 1.2em;
+    margin-top: 22vh;
+}
+
+.swiper-slide img{
+    width: 100%;
+    height: 100%;
+    border-radius: 6em;
+
+    object-fit: cover;
+}

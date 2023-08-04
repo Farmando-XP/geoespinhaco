@@ -1,7 +1,7 @@
 const swiper = new Swiper('.swiper', {
     // Optional parameters
     simulateTouch: false,
-    speed: 1000,
+    speed: 800,
     direction: 'horizontal',
 
     // Navigation arrows
