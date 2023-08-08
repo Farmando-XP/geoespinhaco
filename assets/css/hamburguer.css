@@ -44,7 +44,7 @@
   width: 0;
   height: 0;
   margin: 30px 0 20px 20px;
-  background: radial-gradient(circle, #24340f, #24340f);
+  background: transparent;
   border-radius: 50%;
   transition: 0.3s ease;
 }
