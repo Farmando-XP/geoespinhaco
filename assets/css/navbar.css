@@ -45,7 +45,7 @@
   --branco: whitesmoke;
   --textosFooter: 1.2rem;
   --verde: rgba(36, 52, 15, 1);
-  --marrom: #441E0D;
+  --marrom: #441e0d;
   --ciano: #235755;
 }
 
@@ -65,15 +65,35 @@ header.bottom {
   position: sticky;
 }
 
+/* CORES */
+
+/* VERDE */
+
 header.verde {
   background-color: var(--verde);
 }
+
+header.verde div.options {
+  background-color: var(--verde);
+}
+
+/* MARROM */
 
 header.marrom {
   background-color: var(--marrom);
 }
 
+header.marrom div.options {
+  background-color: var(--marrom);
+}
+
+/* CIANO */
+
 header.ciano {
+  background-color: var(--ciano);
+}
+
+header.ciano div.options {
   background-color: var(--ciano);
 }
 
@@ -128,7 +148,7 @@ div.menu-mobile {
 
   justify-content: space-between;
 
-  background-color: --verde;
+  background-color: inherit;
 }
 
 div.menu-mobile img {
@@ -145,6 +165,7 @@ div.menu-mobile div.menu-modal {
 
   width: 100vw;
   height: 100vh;
+  top: 0;
   left: -100vw;
 
   background-color: rgba(0, 0, 0, 0.5);
@@ -164,8 +185,6 @@ div.menu-mobile div.menu-modal.active {
 div.menu-mobile div.options {
   display: flex;
   flex-direction: column;
-
-  background-color: #24340f;
 
   width: 60vw;
   min-width: fit-content;
@@ -221,5 +240,9 @@ div.menu-mobile div.options a {
   }
   div.menu-mobile {
     display: flex;
+  }
+
+  header.bottom {
+    position: fixed;
   }
 }
