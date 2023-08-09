@@ -107,6 +107,7 @@ main {
     margin-top: 2.5rem;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     align-items: stretch;
     justify-content: space-between;
     overflow: hidden;
@@ -133,10 +134,9 @@ main {
 }
 
 .img1-RSBE{
-    width: 49vw;
-    height: 80vh;
+    width: 100%;
+    height: 100%;
     margin-right: 2rem;
-    padding-left: 1em;
 }
 
 .img1-RSBE img{
@@ -320,11 +320,9 @@ div.square-box:hover img {
     }
 
     .img1-RSBE{
-        width: 90vw;
-        height: 35vh;
-        margin-right: 2.5rem;
-        padding-left: 1em;
         margin-top: 1.5em;
+        width: 100%;
+        height: 100%;
     }
 
     .container-flex2{
@@ -401,8 +399,8 @@ div.square-box:hover img {
     }
 
     .img1-RSBE{
-        width: 60vw;
-        height: 70vh;
+        width: 100%;
+        height: 100%;
         margin-top: 1.5em; 
     }
 
