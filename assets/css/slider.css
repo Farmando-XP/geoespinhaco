@@ -100,12 +100,12 @@
     line-height: 3.8vh;
     text-align: justify;
 
-    margin-bottom: 1.8vh;
+    margin-bottom: 5vh;
 }
 
 .swiper.bottom .swiper-slide img{
     width: 90%;
-    height: 75%;
+    height: 74%;
     border-radius: 2.2vw;
 }
 
@@ -133,11 +133,11 @@
     
         font-size: 1.2em;
     
-        margin-bottom: 2vh;
+        margin-bottom: 6vh;
     }
 
     .swiper.bottom .swiper-slide img{
-        height: 72%;
+        height: 70%;
     }
 }
 
