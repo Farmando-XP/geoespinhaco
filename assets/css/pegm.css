@@ -17,6 +17,8 @@ body {
 
   height: 100vh;
   width: 100vw;
+  width: 100%;
+
   background: url("./../img/img-pegm/PEGM-PAG.JPG");
   background-size: cover;
   overflow: hidden;
@@ -42,11 +44,12 @@ body {
   font-weight: 500;
   justify-content: flex-start;
   letter-spacing: 0.05em;
-  line-height: 9vh;
+  line-height: 7vh;
   margin-top: 1em;
   text-align: center;
   text-transform: uppercase;
   width: 40vw;
+  margin-bottom: 1em;
 }
 .container-flex1 {
   margin-top: 2.5rem;
@@ -54,7 +57,7 @@ body {
   display: flex;
   flex-flow: row;
   justify-content: space-around;
-  gap: 20vh;
+  gap: 5vh;
 }
 .div-flex1 {
   display: flex;
@@ -106,11 +109,9 @@ body {
 }
 
 #img-pdf1 {
+  height: 10vh;
+  width: 10vw;
   width: 100%;
-  max-width: 7vh;
-  max-height: 7vw;
-  min-width: 6vh;
-  min-height: 6vw;
   text-align: center;
   transition: all 0.5s ease;
   cursor: pointer;
@@ -118,11 +119,13 @@ body {
 .img1-PEBOT {
   width: 90%;
   margin-right: 3em;
-  margin-top: 3em;
   margin-left: 3em;
 }
 
 @media screen and (max-width: 768px) {
+  #imagem-title{
+    font-size: 5vh;
+  }
   .div-flex1 {
     flex-flow: column;
     flex-direction: column;

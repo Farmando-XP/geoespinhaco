@@ -17,6 +17,8 @@ body {
 
   height: 100vh;
   width: 100vw;
+  width: 100%;
+  
   background: url("./../img/img-pebot/PEBOT-PAG.JPG");
   background-size: cover;
   overflow: hidden;
@@ -39,7 +41,7 @@ body {
   display: flex;
   flex-flow: row;
   justify-content: space-around;
-  gap: 20vh;
+  gap: 5vh;
 }
 
 .div-flex1 {
@@ -56,7 +58,7 @@ body {
   font-weight: 500;
   justify-content: flex-start;
   letter-spacing: 0.05em;
-  line-height: 9vh;
+  line-height: 7vh;
   margin-top: 1em;
   text-align: center;
   text-transform: uppercase;
@@ -76,7 +78,8 @@ body {
 }
 
 .img1-PEBOT {
-  width: 90%;
+  width: 100%;
+  height: 100%;
   margin-right: 3em;
 }
 
@@ -88,11 +91,10 @@ body {
 }
 
 #img-pdf {
+  height: 10vh;
+  width: 10vw;
   width: 100%;
-  max-width: 7vh;
-  max-height: 7vw;
-  min-width: 6vh;
-  min-height: 6vw;
+
   text-align: center;
   transition: all 0.5s ease;
   cursor: pointer;
@@ -145,21 +147,34 @@ body {
 
 #title-h2 {
   font-size: 2.5em;
-  margin-top: 0.5em;
   width: 55vw;
+  margin: 0.5em 1rem 1em 1rem;
 }
 
 .img2-PEBOT {
-  width: 35%;
-  margin-top: 2.5em;
-  margin-bottom: 4em;
+  width: 100%;
+  margin-bottom: 3em;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width:400px) and (max-width: 767px) {
+
+  #imagem-title{
+    font-size: 5vh;
+  }
   .container-flex1 {
     flex-direction: column;
     flex-wrap: wrap;
     flex-flow: wrap;
+
+    width: 90vw;
+    margin: auto;
+  }
+
+  .container-flex2{
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex-flow: wrap;
+    justify-content: center;
 
     width: 90vw;
     margin: auto;
@@ -179,10 +194,10 @@ body {
     margin: auto;
   }
 
-  .img1-PEBOT {
+  .img1-PEBOT, .img2-PEBOT {
     align-self: center;
     margin: auto;
-    height: 95%;
+
   }
 
   #title-h1 {
@@ -204,9 +219,9 @@ body {
     font-size: 1.5em;
   }
 
-  .img1-PEBOT {
-    margin-top: 2em;
-    height: 95%;
+  .img1-PEBOT, .img2-PEBOT {
+    align-self: center;
+    margin: auto;
   }
 
   .textpdf {
@@ -224,5 +239,9 @@ body {
 
   .container-flex1 {
     gap: 5vh;
+  }
+
+  .container-flex2{
+    margin: auto;
   }
 }
