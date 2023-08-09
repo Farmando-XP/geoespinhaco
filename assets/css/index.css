@@ -16,69 +16,7 @@ body{
 }
 
 main {
-    margin-block: 15vh;
-}
-
-.swiper{
-    user-select: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 80vw;
-    overflow: visible;
-}
-
-.swiper-button-next{
-    right: var(--swiper-navigation-sides-offset, -6vw);
-    left: auto;
-}
-
-.swiper-button-prev{
-    left: var(--swiper-navigation-sides-offset, -6vw);
-    right: auto;
-}
-
-.swiper-button-next::after , .swiper-button-prev::after{
-    display: none;
-}
-
-.swiper-button-next, .swiper-button-prev{
-    background-color: #D6D6D6;
-    width: 7vh;
-    height: 7vh;
-    border-radius: 50%;
-}
-
-.swiper-button-next img, .swiper-button-prev img{
-    width: 4.5vh;
-    height: 4.5vh;
-}
-
-.swiper-slide{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.swiper-slide h2, .swiper-slide h3{
-    font-family: "kanit";
-    position: absolute;
-    color: white;
-}
-
-.swiper-slide h2{
-    font-size: 6em;
-}
-
-.swiper-slide h3{
-    font-size: 1.2em;
-    margin-top: 22vh;
-}
-
-.swiper-slide img{
-    width: 100%;
-    height: 100%;
-    border-radius: 6em;
+    margin-block: 10vh 15vh;
 }
 
 .title{
