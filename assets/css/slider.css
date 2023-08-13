@@ -67,19 +67,20 @@
 }
 
 .swiper.bottom{
-    margin-block: 2.5vh;
-    margin-bottom: 1.5vh;
+    margin-block: 3.5vh 2.5vh;
 }
 
 .swiper.bottom .swiper-slide{
     flex-direction: column;
 }
 
-.swiper.bottom .swiper-slide h2, 
+.swiper.bottom .swiper-slide h2,
 .swiper.bottom .swiper-slide h3{
-   position: static;
-   color: black;
-   margin: 0;
+    user-select: text;
+
+    position: static;
+    color: black;
+    margin: 0;
 }
 
 .swiper.bottom .swiper-slide h2{
@@ -92,15 +93,13 @@
 
 .swiper.bottom .swiper-slide h3{
     width: 78vw;
-    height: 14vh;
+    height: max-content;
 
     font-family: "Poppins";
     font-size: 1.5em;
     font-weight: 400;
     line-height: 3.8vh;
     text-align: justify;
-
-    margin-bottom: 5vh;
 }
 
 .swiper.bottom .swiper-slide img{
@@ -121,7 +120,7 @@
 
 @media screen and (max-width: 1200px){
     .swiper.bottom{
-        margin-bottom: 1.2vh;
+        margin-block: 0vh 1.5vh;
     }
 
     .swiper.bottom .swiper-slide h2{
@@ -129,11 +128,7 @@
     }    
 
     .swiper.bottom .swiper-slide h3{
-        height: 14vh;
-    
         font-size: 1.2em;
-    
-        margin-bottom: 6vh;
     }
 
     .swiper.bottom .swiper-slide img{
@@ -142,16 +137,17 @@
 }
 
 @media screen and (max-width: 850px){
+    .swiper.bottom{
+        margin-block: 0vh -2.5vh;
+    }
+
     .swiper.bottom .swiper-slide h2{
         font-size: 1.1em;
     }
 
     .swiper.bottom .swiper-slide h3{
-        height: 14vh;
-    
+        line-height: 3.3vh;
         font-size: 1em;
-    
-        margin-bottom: 5vh;
     }
 
     .swiper.bottom .swiper-slide img{
@@ -161,7 +157,7 @@
 
 @media screen and (max-width: 600px){
     .swiper.bottom{
-        margin-bottom: 0.5vh;
+        margin-block: -4vh -6vh;
     }
 
     .swiper.bottom .swiper-slide h2{
@@ -169,11 +165,7 @@
     } 
 
     .swiper.bottom .swiper-slide h3{
-        height: 12vh;
-    
         font-size: 1em;
-    
-        margin-bottom: 12vh;
     }
 
     .swiper.bottom .swiper-slide img{

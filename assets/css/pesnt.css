@@ -41,7 +41,6 @@ body {
   flex-flow: row;
   justify-content: space-around;
   gap: 5vh;
-  margin-bottom: 3em;
 }
 
 .div-flex1 {
