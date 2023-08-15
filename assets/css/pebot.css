@@ -21,6 +21,7 @@ body {
   
   background: url("./../img/img-pebot/PEBOT-PAG.JPG");
   background-size: cover;
+  background-position: center;
   overflow: hidden;
 }
 
@@ -33,6 +34,7 @@ body {
   text-transform: uppercase;
   color: #fff;
   letter-spacing: 0.07em;
+  margin: 0 .5em 0 .5em;
 }
 
 .container-flex1 {
@@ -158,7 +160,7 @@ body {
 @media screen and (min-width:400px) and (max-width: 767px) {
 
   #imagem-title{
-    font-size: 5vh;
+    font-size: 7vh;
   }
   .container-flex1 {
     flex-direction: column;

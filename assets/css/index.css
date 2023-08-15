@@ -103,7 +103,7 @@ div.square-box {
     display: flex;
     flex-direction: column;
 
-    width: 50vh;
+    width: 55vh;
 
     overflow: hidden;
 
@@ -151,6 +151,7 @@ div.square-box:hover img {
 #text2{
     display: flex;
     text-align: justify;
+    margin: .5em;
 }
 
 .Stitle-2{
@@ -346,11 +347,6 @@ div.square-box:hover img {
         padding-right: .5rem;
         display: flex;
         align-items: center;
-    }
-
-    #text2{
-        margin-left: .5rem;
-        margin-right: .5rem;
     }
   }
 

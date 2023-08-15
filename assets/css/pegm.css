@@ -21,6 +21,7 @@ body {
 
   background: url("./../img/img-pegm/PEGM-PAG.JPG");
   background-size: cover;
+  background-position: center;
   overflow: hidden;
 }
 
@@ -33,6 +34,7 @@ body {
   text-transform: uppercase;
   color: #fff;
   letter-spacing: 0.07em;
+  margin: 0 .5em 0 .5em;
 }
 
 .Stitle-2 {
@@ -124,7 +126,7 @@ body {
 
 @media screen and (max-width: 768px) {
   #imagem-title{
-    font-size: 5vh;
+    font-size: 7vh;
   }
   .div-flex1 {
     flex-flow: column;

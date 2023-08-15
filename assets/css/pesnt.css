@@ -20,6 +20,7 @@ body {
   width: 100%;
   background: url("./../img/img-pesnt/PESNT-HOME.JPG");
   background-size: cover;
+  background-position: center;
   overflow: hidden;
 }
 
@@ -32,6 +33,7 @@ body {
   text-transform: uppercase;
   color: #fff;
   letter-spacing: 0.07em;
+  margin: 0 .5em 0 .5em;
 }
 
 .container-flex1 {
@@ -124,12 +126,11 @@ body {
 @media screen and (max-width: 753px) {
 
   #imagem-title {
-    font-size: 5vh;
+    font-size: 4vh;
   }
 
   .Stitle-1 {
     font-size: 2em;
-    margin: 0;
     width: fit-content;
   }
 
