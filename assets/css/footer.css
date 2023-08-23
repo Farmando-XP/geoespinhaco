@@ -9,14 +9,18 @@ footer {
     --branco: whitesmoke;
     --textosFooter: 1.2rem;
     --verde: rgba(36, 52, 15, 1);
-    --marrom: #441e0d;
+    --marromClaro: #573B2B;
+    --marromEscuro: #441E0D;
     --ciano: #235755;
   }
   .verde{
     background-color: var(--verde);
   }
-  .marrom{
-    background-color: var(--marrom);
+  .marromClaro{
+    background-color: var(--marromClaro);
+  }
+  .marromEscuro{
+    background-color: var(--marromEscuro);
   }
   .ciano{
     background-color: var(--ciano);
