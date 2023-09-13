@@ -45,7 +45,8 @@
   --branco: whitesmoke;
   --textosFooter: 1.2rem;
   --verde: rgba(36, 52, 15, 1);
-  --marrom: #441e0d;
+  --marromClaro: #573B2B;
+  --marromEscuro: #441E0D;
   --ciano: #235755;
 }
 
@@ -77,14 +78,24 @@ header.verde div.options {
   background-color: var(--verde);
 }
 
-/* MARROM */
+/* MARROM CLARO*/
 
-header.marrom {
-  background-color: var(--marrom);
+header.marromClaro{
+  background-color: var(--marromClaro);
 }
 
-header.marrom div.options {
-  background-color: var(--marrom);
+header.marromClaro div.options {
+  background-color: var(--marromClaro);
+}
+
+/* MARROM ESCURO*/
+
+header.marromEscuro{
+  background-color: var(--marromEscuro);
+}
+
+header.marromEscuro div.options {
+  background-color: var(--marromEscuro);
 }
 
 /* CIANO */
