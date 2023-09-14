@@ -16,7 +16,6 @@ body {
   align-items: center;
 
   height: 100vh;
-  width: 100vw;
   width: 100%;
 
   background: url("./../img/img-pegm/PEGM-PAG.JPG");
@@ -44,7 +43,7 @@ body {
   font-weight: 500;
   justify-content: flex-start;
   letter-spacing: 0.05em;
-  line-height: 7vh;
+  line-height: 8vh;
   margin-top: 1em;
   text-align: center;
   text-transform: uppercase;
@@ -53,16 +52,18 @@ body {
 }
 .container-flex1 {
   margin-top: 2.5rem;
-  margin-left: 3em;
+  margin-left: 1.5em;
   display: flex;
   flex-flow: row;
   justify-content: space-around;
   gap: 5vh;
 }
+
 .div-flex1 {
   display: flex;
   flex-flow: column wrap;
 }
+
 .text2 {
   font-family: "Kanit", sans-serif;
   font-style: normal;
@@ -92,11 +93,7 @@ body {
 .textpdf:hover {
   opacity: 0.6;
 }
-#text {
-  display: flex;
-  text-align: justify;
-  width: 41vw;
-}
+
 .pdf1 {
   display: flex;
   flex-direction: row;
@@ -118,38 +115,49 @@ body {
 }
 .img1-PEBOT {
   width: 90%;
-  margin-right: 3em;
-  margin-left: 3em;
+  margin-right: 2em;
+  margin-left: 1.4em;
 }
 
-@media screen and (max-width: 768px) {
+
+@media screen and (min-width:100px) and (max-width: 1015px) {
+
+
   #imagem-title{
     font-size: 5vh;
   }
-  .div-flex1 {
-    flex-flow: column;
-    flex-direction: column;
-  }
+
   .container-flex1 {
     flex-direction: column;
-    flex-flow: wrap;
-    margin: 0;
-    padding: 2vh;
-    height: fit-content;
-    justify-content: center;
+    flex-wrap: wrap;
+
+    width: 90vw;
+    margin: auto;
   }
+
 
   .Stitle-2 {
     width: fit-content;
+    font-size: 1.5em;
+    margin-left: 1em;
+    margin-right: 1em;
+    line-height: 5vh;
   }
 
-  #text {
-    width: 100%;
-    margin: 0;
+  .text2{
+    width: fit-content;
+    font-size: 1.2em;
   }
 
-  .img1-PEBOT {
-    width: 100%;
-    margin: 0;
+  .container-flex1 a.img {
+    display: flex;
+    align-self: center;
+    margin: auto;
   }
+
+  .textpdf{
+    font-size: 1.4em;
+  }
+
 }
+
