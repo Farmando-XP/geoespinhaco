@@ -16,12 +16,17 @@ body {
   align-items: center;
 
   height: 100vh;
-  width: 100vw;
-  width: 100%;
+
   background: url("./../img/img-pesnt/PESNT-HOME.JPG");
   background-size: cover;
   overflow: hidden;
 }
+
+#container-imagem img{
+  max-width: 100%;
+  height: auto;
+}
+
 
 #imagem-title {
   font-family: "Krona One", sans-serif;
@@ -58,7 +63,7 @@ body {
   font-weight: 500;
   justify-content: flex-start;
   letter-spacing: 0.05em;
-  line-height: 6vh;
+  line-height: 6.5vh;
   margin-top: 1em;
   text-align: center;
   text-transform: uppercase;
@@ -122,116 +127,65 @@ body {
   opacity: 0.6;
 }
 
-@media screen and (max-width: 753px) {
+@media screen and (min-width:100px) and (max-width: 1015px) {
 
-  #imagem-title {
+  #imagem-title{
     font-size: 5vh;
   }
+  .container-flex1 {
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex-flow: wrap;
+
+    width: 90vw;
+    margin: auto;
+  }
+
+  .container-flex2{
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex-flow: wrap;
+    justify-content: center;
+
+    width: 90vw;
+    margin: auto;
+  }
 
   .Stitle-1 {
-    font-size: 2em;
-    margin: 0;
     width: fit-content;
-  }
-
-  .text {
-    font-size: 1.5em;
-    width: fit-content;
-    margin: 0;
-    margin-top: 2em;
-  }
-
-  .img1-PESNT {
-    margin-top: 2em;
-    height: 80%;
-    width: 100%;
-  }
-
-  .container-flex1 {
-    gap: 1vh;
-    flex-wrap: wrap;
-  }
-
-  .container-flex1 {
-    gap: 5vh;
-    flex-wrap: wrap;
-    margin: 0;
-    justify-content: center;
-  }
-
-  .div-flex1 {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    width: 100vw;
-    margin: 0 1em 0 1em;
-  }
-}
-
-@media screen and (min-width: 714px) and (max-width: 753px) {
-  .Stitle-1 {
     font-size: 2em;
-    margin-left: -1.5em;
+    margin-left: 1em;
+    margin-right: 1em;
   }
 
   .text {
-    font-size: 1.5em;
-    margin-right: 2em;
-    margin-top: 2em;
+    width: fit-content;
+    font-size: 1.2em;
   }
 
-  .img1-PESNT {
-    margin-top: 2em;
-    height: 80%;
+  .container-flex1 a.img {
+    display: flex;
+    align-self: center;
+    margin: auto;
   }
 
-  .container-flex1 {
-    gap: 1vh;
-    flex-wrap: wrap;
+  .img1-PEBOT, .img2-PEBOT {
+    align-self: center;
+    margin: auto;
   }
 
-  .container-flex1 {
-    gap: 5vh;
-    flex-wrap: wrap;
+  .textpdf{
+    font-size: 1.4em;
+    margin-top: .3em;
   }
 
-  .div-flex1 {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
+  #title-h1 {
+    font-size: 2.5em;
   }
 
-  .text {
-    margin-left: 3em;
+  #title-h2 {
+    width: fit-content;
+    font-size: 1.8em;
   }
 }
 
-@media screen and (min-width: 754px) and (max-width: 1015px) {
-  .Stitle-1 {
-    font-size: 2.3em;
-  }
-
-  .text {
-    font-size: 1.5em;
-  }
-
-  .img1-PESNT {
-    margin-top: 2em;
-    height: 90%;
-  }
-
-  .container-flex1 {
-    gap: 5vh;
-    flex-wrap: wrap;
-  }
-
-  .div-flex1 {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  .text {
-    margin-left: 3em;
-  }
-}

@@ -16,11 +16,15 @@ body {
   align-items: center;
 
   height: 100vh;
-  width: 100%;
   
   background: url("./../img/img-pebot/PEBOT-PAG.JPG");
   background-size: cover;
   overflow: hidden;
+}
+
+#container-imagem img{
+  max-width: 100%;
+  height: auto;
 }
 
 #imagem-title {
