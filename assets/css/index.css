@@ -26,7 +26,7 @@ main {
     letter-spacing: 0.09em;
     font-style: normal;
     font-weight: 500;
-    font-size: 5em; 
+    font-size: clamp(1em, 4em, 4em);
     text-align: center;
 }
 
@@ -46,7 +46,7 @@ main {
     margin-right: 1em;
     margin-left: 1em;
     display: flex;
-    flex-direction: row;
+    flex-flow: row;
     align-items: stretch;
     justify-content: space-between;
     overflow: hidden;
@@ -55,19 +55,16 @@ main {
 .text{
     font-family: 'Kanit', sans-serif;
     font-style: normal;
-    font-size: 1.7em;
+    font-size: clamp(1.3em, 1.7em, 1.7em);
     line-height: 1.5em;
     display: flex;
     letter-spacing: 0.01em;
     color: #000000;
     text-align: justify;
-    align-items: center;
-    
+ 
 }
 
 #text1{
-    display: flex;
-    text-align: justify;
     margin-top: .5em;
 }
 
@@ -155,7 +152,7 @@ div.square-box:hover img {
 
 .Stitle-2{
     width: 50vw;
-    font-size: 4.5em;  
+    font-size: clamp(1em, 4em, 4em);
     display: flex;
     align-items: center;
     margin-bottom: .5em;
@@ -169,8 +166,9 @@ div.square-box:hover img {
     cursor: pointer;
 }
 
-#img-pdf1{
+#img-pdf1, #img-pdf2{
     height: 18vh;
+    width: 100%;
     transition: all .5s ease;
 }
 
@@ -178,41 +176,32 @@ div.square-box:hover img {
     transform: scale(1.1);
 }
 
-#img-pdf2{
-    height: 18vh;
-    transition: all .5s ease;
-}
 
 #img-pdf2:hover{
     transform: scale(1.1);
 }
 
-#pdf1{
+#pdf1, #pdf2{
     display: flex;
     flex-direction: column;
     text-align: center;
 }
 
-#pdf2{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-}
 
 .textpdf{
     font-family: 'Kanit', sans-serif;
     font-style: normal;
-    font-size: 1.7em;
+    font-size: 1.4em;
     line-height: 1.2em;
     margin-right: 1em;
     margin-left: 1em;
     letter-spacing: 0.05em;
     color: #000000;
     line-height: 1.5em;
-    text-align: justify;
     transition: all .3s;
     cursor: pointer;
     font-weight: 600;
+    text-align: center;
 }
 
 .textpdf:hover{
@@ -220,9 +209,9 @@ div.square-box:hover img {
 }
 
 
-@media screen and (min-width:400px) and (max-width:767px) { 
+@media screen and (min-width:100px) and (max-width:767px) { 
     .title{
-        font-size: 2.7em;
+        font-size: 2.2em;
         padding-left: 3rem;
         padding-right: 3rem;
     }
@@ -240,15 +229,12 @@ div.square-box:hover img {
 
     .text{
         margin-top: 0;
-        margin-left: 1rem;
-        margin-right: 1rem;
-        font-size: 1.3em;
+        margin-left: .5rem;
+        margin-right: .5rem;
+        font-size: 1em;
     }
 
     #text1{
-        display: flex;
-        flex-flow: wrap;
-        justify-content: center;
         margin-top: 0;
     }
 
@@ -264,7 +250,6 @@ div.square-box:hover img {
     .Stitle-2{
         margin-bottom: .8em;
         width: 80vw;
-        font-size: 3.3em;
         padding-left: .5rem;
         padding-right: .5rem;
         display: flex;
